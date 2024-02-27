@@ -11,3 +11,5 @@ jobs:
           php-version: 8.3
           extensions: mbstring, ctype, fileinfo, openssl, PDO, bcmath, json, tokenizer, xml
       - run: php hello.php
+      - name: Recuperar una variable secreta
+      - run: echo ${{PROVA_SECRET}}
